@@ -2,11 +2,11 @@
 
 Welcome to the PalmsGrille repository. Home to the Palms++ team.
 
-When using GitHub:
-	Add a new file to master
-	Then view changes to the master
-	Add a commit summary
-	Select files you want to commit
-	Select to create new branch on commit
-		!!! THIS IS HOW WE MAKE NEW BRANCHES !!!    :)
-	Commit
+When using GitHub:<br />
+	Add a new file to master<br />
+	Then view changes to the master<br />
+	Add a commit summary<br />
+	Select files you want to commit<br />
+	Select to create new branch on commit<br />
+		!!! THIS IS HOW WE MAKE NEW BRANCHES !!!    :)<br />
+	Commit<br />
