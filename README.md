@@ -10,3 +10,5 @@ When using GitHub:<br />
 	Select to create new branch on commit<br />
 		!!! THIS IS HOW WE MAKE NEW BRANCHES !!!    :)<br />
 	Commit<br />
+  
+ Judah Wilson
