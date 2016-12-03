@@ -12,3 +12,4 @@ When using GitHub:<br />
 	Commit<br />
   
  Judah Wilson
+ Jacob Harder
