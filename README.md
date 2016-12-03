@@ -11,7 +11,7 @@ When using GitHub:<br />
 		!!! THIS IS HOW WE MAKE NEW BRANCHES !!!    :)<br />
 	Commit<br />
   
- Judah Wilson
-Josiah Doak was finally here
-Josiah Was here again!
+ Judah Wilson<br />
+Josiah Doak was finally here<br />
+Josiah Was here again!<br />
 
