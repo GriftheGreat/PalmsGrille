@@ -11,8 +11,6 @@ When using GitHub:<br />
 		!!! THIS IS HOW WE MAKE NEW BRANCHES !!!    :)<br />
 	Commit<br />
   
- Judah Wilson<br />
-Josiah Doak was finally here<br />
-Josiah Was here again!<br />
-A wild Phil appeared!!<br />
-Judah ruined the document, darn.<br />
+ Judah Wilson
+ Josiah was here
+ Jacob Harder
