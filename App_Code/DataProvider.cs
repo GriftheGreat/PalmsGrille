@@ -5,25 +5,27 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-public partial class DataProvider
+namespace WebApplication1
 {
-   public static string mytext = " got connected!";
-   
-   public string status
-   {
-      get { return "good"; }
-      set { status = value; }
-   }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="a"></param>
-    /// <param name="b"></param>
-    /// <returns></returns>
-   public float j(int a, int b)
+    public partial class DataProvider
     {
-        return a * b;
-    }
+        public static string mytext = " got connected!";
 
+        public string status
+        {
+            get { return "good"; }
+            set { status = value; }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
+        public float j(int a, int b)
+        {
+            return a * b;
+        }
+    }
 }

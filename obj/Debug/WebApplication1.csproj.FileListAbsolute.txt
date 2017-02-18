@@ -91,3 +91,5 @@ F:\Palms++\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
 F:\Palms++\WebApplication1\WebApplication1\bin\System.Net.Http.Formatting.xml
 F:\Palms++\WebApplication1\WebApplication1\bin\System.Web.Http.xml
 F:\Palms++\WebApplication1\WebApplication1\bin\System.Web.Http.WebHost.xml
+G:\Palms++\Training Repository\obj\Debug\WebApplication1.dll
+G:\Palms++\Training Repository\obj\Debug\WebApplication1.pdb

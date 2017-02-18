@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#"
            AutoEventWireup="true"
-           CodeBehind="Default.master.cs"
+           CodeFile="Default.Master.cs"
            Inherits="WebApplication1.Master_Pages.Default" %>
 
 <!DOCTYPE html>

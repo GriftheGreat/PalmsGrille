@@ -1,24 +1,45 @@
 ﻿using System;
 using System.Data;
 using System.Web.UI.WebControls;
+using System.Net;
+using System.Collections.Specialized;
+using Oracle.DataAccess.Client;
 
-namespace WebApplication1
+public partial class _Default : System.Web.UI.Page
 {
-    public partial class Default : System.Web.UI.Page
+    protected void Page_Load(object sender, EventArgs e)
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            this.me.Text = "Jacob" + DataProvider.mytext;
-        }
+        //this.me.Text = "Jacob" + DataProvider.mytext;
+        //throw new Exception("my error", new Exception("my inner error"));
+    }
 
-        protected void Label4_DataBinding(object sender, EventArgs e)
+    protected void L()
+    {
+        String query_string = "BEGIN create_record(:p_1); END;";
+        OracleConnection myConnection = new OracleConnection("");
+        OracleCommand myCommand = new OracleCommand(query_string, myConnection);
+
+        try
         {
-            Label lbl4 = (Label) sender;
-            RepeaterItem container = (RepeaterItem)lbl4.NamingContainer;
-            lbl4.Text = ((DataRowView)container.DataItem)[0].ToString(); // column 0
+            myConnection.Open();
+
+            myCommand.Parameters.Add("p_1", true);
+            myCommand.ExecuteNonQuery();
+
+
         }
-     }
-}
+        finally
+        {
+            try
+            {
+                myCommand.Dispose();
+            }
+            catch { }
+
+            myConnection.Close();
+            myConnection.Dispose();
+        }
+    }
 
 //https://msdn.microsoft.com/en-us/library/ms164642(v=vs.80).aspx
 //
@@ -44,3 +65,20 @@ namespace WebApplication1
 //   </namespaces>
 //   <!-- Other elements -->
 //</pages>
+
+    protected void btnHI_click(object sender, EventArgs e)
+    {
+        using (WebClient wb = new WebClient())
+        {
+            NameValueCollection data = new NameValueCollection();
+            //data["id"]       = "myID";
+            //data["password"] = "myPassword";
+            //data["amount"]   = "theAmount";
+            data["fname"] = "Ryan";
+
+            byte[] response = wb.UploadValues("http://www.w3schools.com/asp/showasp.asp?filename=demo_simpleform", "POST", data);
+            Response.Write(response);
+        }
+        //http://www.w3schools.com/asp/showasp.asp?filename=demo_simpleform
+    }
+}

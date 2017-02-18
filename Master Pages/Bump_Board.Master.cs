@@ -12,6 +12,6 @@ namespace WebApplication1.Master_Pages
       protected void Page_Load(object sender, EventArgs e)
       {
 
-      }
+        }
    }
 }

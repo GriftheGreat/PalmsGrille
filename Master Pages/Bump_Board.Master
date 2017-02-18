@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#"
            AutoEventWireup="true"
-           CodeBehind="Bump_Board.master.cs"
+           CodeFile="Bump_Board.Master.cs"
            Inherits="WebApplication1.Master_Pages.Bump_Board" %>
 
 <!DOCTYPE html>
