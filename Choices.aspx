@@ -15,7 +15,7 @@
 
 <asp:Content ID="Content" runat="server" ContentPlaceHolderID="Content">
     <asp:SqlDataSource ID="SqlCategories" runat="server"
-        ConnectionString="<%$ ConnectionStrings:SEI_DB_Connection %>"
+        ConnectionString="<%$ ConnectionStrings:SEI_DB_Connection.connectionString %>"
         ProviderName="<%$ ConnectionStrings:SEI_DB_Connection.providerName %>"
         SelectCommand="SELECT ft.food_type_name, ft.food_type_id_pk,
                                 CASE LOWER(ft.food_type_name)
@@ -52,7 +52,7 @@
             </div>
 
             <asp:SqlDataSource ID="sqlFood" runat="server"
-                ConnectionString="<%$ ConnectionStrings:SEI_DB_Connection %>"
+                ConnectionString="<%$ ConnectionStrings:SEI_DB_Connection.connectionString %>"
                 ProviderName="<%$ ConnectionStrings:SEI_DB_Connection.providerName %>"
                 SelectCommand="SELECT f.food_id_pk, f.food_name, f.food_descr, f.food_cost, f.is_deliverable, f.image_path
                                  FROM food f
@@ -83,7 +83,7 @@
                                     <asp:Label       ID="lbldeliverable"      runat="server" Text='<%# Eval("is_deliverable") %>' CssClass="deliver" />
                                     <asp:HiddenField ID="hidFoodID"           runat="server" Value='<%# Eval("food_id_pk") %>' />
 							        <div class="order_button">
-								        <button type="button">Add to cart!</button>
+								        <asp:Button  ID="btnAdd"              runat="server" Text="Add to cart!" OnClick="btnAdd_Click" CssClass="btnAdd"/>
 							        </div>
                                 </div>
 		                    </div>

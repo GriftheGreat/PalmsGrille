@@ -9,8 +9,6 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        //this.me.Text = "Jacob" + DataProvider.mytext;
-        //throw new Exception("my error", new Exception("my inner error"));
     }
 
     protected void L()

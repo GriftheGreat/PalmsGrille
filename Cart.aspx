@@ -13,7 +13,10 @@
 </asp:Content>
 
 <asp:Content ID="Content" runat="server" ContentPlaceHolderID="Content">
-    <h1>Hello World! This is the cart!</h1>
-    <br />
-    <asp:Button ID="btnHI" Text="send data" runat="server" OnClick="btnHI_click" />
+    <asp:SqlDataSource ID="sqlstuff" runat="server"
+        ConnectionString="<%$ ConnectionStrings:SEI_DB_Connection %>"
+        ProviderName="<%$ ConnectionStrings:SEI_DB_Connection.providerName %>"
+        SelectCommand="SELECT * FROM food_detail_line">
+    </asp:SqlDataSource>
+    <asp:GridView ID="gdvstuff" runat="server" DataSourceID="sqlstuff" AutoGenerateColumns="true" />
 </asp:Content>
